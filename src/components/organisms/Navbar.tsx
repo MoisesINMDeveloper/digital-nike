@@ -22,7 +22,7 @@ const Navbar=() => {
 
     return (
         <div>
-            <div className="z-50 top-0 fixed h-10 w-full flex flex-row-reverse justify-between items-center px-4 pt-2 bg-[#e9e9e9f5] box-shadow text-black text-lg">
+            <div className="z-50 top-0 fixed h-10 w-full flex flex-row-reverse justify-between items-center px-4 pt-2 bg-[rgba(233,233,233,0.96)] box-shadow text-black text-lg">
                 <div className="flex flex-row gap-2">
                     <Title color="text-yellow" title={"Digital Nike"} />
                     <IconBurger onClick={handleIconBurgerClick} productCount={cartItems.length} />
