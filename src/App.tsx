@@ -8,7 +8,7 @@ export default function App() {
 
   return (
     <>
-      <main className='w-screen h-screen bg-white'>
+      <main className='w-full h-full bg-white'>
         <Navbar />
         <Dashboard />
         <Footer />
