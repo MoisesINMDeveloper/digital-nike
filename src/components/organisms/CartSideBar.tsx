@@ -84,7 +84,7 @@ const CartSidebar=({isOpen,onClose}: {isOpen: boolean; onClose: () => void;}) =>
                     <Button color="w-full text-lg " onClick={handlePaymentClick} label={'Generar pedido'} />
                 </div>
             </div>
-            {isModalOpen&&<PaymentModal total={total} onConfirm={handleConfirm} onClose={(): void => setIsModalOpen(false)} />}
+            {isModalOpen&&<PaymentModal total={total} onConfirm={handleConfirm} onClose={(): void => setIsModalOpen(true)} />}
             {isNotificationVisible&&<NotificationComponent />}
         </>
     );
