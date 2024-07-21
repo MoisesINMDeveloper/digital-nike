@@ -74,7 +74,7 @@ const CartSidebar=({isOpen,onClose}: {isOpen: boolean; onClose: () => void;}) =>
                 <CloseCartIcon onClick={onClose} />
                 <div className="p-4 pt-0">
                     <h2 className="text-xl font-bold mb-4">Cesta de pedido</h2>
-                    <ul>
+                    <ul className="overflow-y-auto max-h-60">
                         {cartItems.map(item => (
                             <CartItem key={item.product.id} item={item} updateQuantity={updateQuantity} removeFromCart={removeFromCart} />
                         ))}
